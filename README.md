@@ -57,7 +57,7 @@ namespace NA
 </pre>
 1. **生成cpp文件命令：./GenerateIDL.exe  -cpp test.idl**
 <pre>
-
+<code>
 #ifndef __TEST_H__
 #define __TEST_H__
 
@@ -560,10 +560,10 @@ namespace NA
     STATIC AXP::Boolean _NA_CList_ = AXP::Libc::Common::ClassLoader::RegisterClassCreator(L"NA.CList", NA::CList::Create);
 }
 #endif // __TEST_H__
+</code>
 </pre>
 2. **生成csharp文件命令：./GenerateIDL.exe  -csharp test.idl**
-<pre>
-
+<pre><code>
 using System;
 using System.Collections.Generic;
 using AXP;
@@ -1051,11 +1051,10 @@ namespace NA
         }
     };
 }
-</pre>
+</code></pre>
 
 3. **生成objective-c文件命令：./GenerateIDL.exe  -objc test.idl**
-<pre>
-
+<pre><code>
 #import "test.h"
 #import "AXP/objective-c/libc/include/Common/ClassLoader.h"
 
@@ -1404,10 +1403,9 @@ STATIC id Create_NA_CList()
 }
 
 STATIC AXP::Boolean __NA_CList__ = RegisterClassCreator(L"NA.CList", Create_NA_CList);
-</pre>
+</code></pre>
 4. **生成javascript文件命令：./GenerateIDL.exe  -javascript test.idl**
-<pre>
-
+<pre><code>
 define(["core/parcel", "core/parcelable"], function ()
 {
     $.declareClass("NA.CBase", XspWeb.Core.Parcelable, {
@@ -1538,10 +1536,9 @@ define(["core/parcel", "core/parcelable"], function ()
         }
     });
 });
-</pre>
+</code></pre>
 5. **生成es6文件命令：./GenerateIDL.exe  -es6 test.idl**
-<pre>
-
+<pre><code>
 "use strict";
 
 import Parcelabel from "axp/parcelable";
@@ -1706,10 +1703,9 @@ export class CList extends CBase
 
     }
 }
-</pre>
+</code></pre>
 6. **生成java文件命令：./GenerateIDL.exe  -java test.idl**
-<pre>
-
+<pre><code>
 package NA;
 
 import java.util.LinkedList;
@@ -2175,4 +2171,4 @@ public class CList extends CBase
         return "NA.CList";
     }
 }
-</pre>
+</code></pre>
