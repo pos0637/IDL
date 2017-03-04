@@ -1,0 +1,8 @@
+
+namespace TestB
+{
+    interface B
+    {
+        Int32 Bar(Int32 a);
+    }
+}

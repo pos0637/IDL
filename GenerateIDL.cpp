@@ -600,7 +600,7 @@ int main(int argc, char* argv[])
             break;
 
         case 'c':
-            if (strcmp(optarg, "s") == 0) {
+            if (strcmp(optarg, "sharp") == 0) {
                 gIDLFlag |= IDL_LANG_CS;
             }
             else if (strcmp(optarg, "pp") == 0) {
